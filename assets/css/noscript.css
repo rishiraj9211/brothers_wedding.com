@@ -1,0 +1,28 @@
+@import url(font-awesome.min.css);
+
+	#wrapper {
+		background-color: #1e7ddb;
+		background-image: url("../../images/lagn1./jpg"), linear-gradient(0deg, rgba(43, 145, 43, 0.5), rgba(230, 25, 25, 0.1)), url("../../images/lagn1.jpg");
+		background-size: auto,								auto,														100% auto;
+		background-position: center,								center,														top center;
+		background-repeat: repeat,								no-repeat,													no-repeat;
+		background-attachment: fixed,								fixed,														fixed;
+	}
+
+		#wrapper.fade-in:before {
+			display: none;
+		}
+
+/* Intro */
+
+	body.is-preload #intro {
+		opacity: .5;
+	}
+
+		body.is-preload #intro:not(.hidden) + #header + #nav {
+			-moz-transform: none;
+			-webkit-transform: none;
+			-ms-transform: none;
+			transform: none;
+			opacity: 1;
+		}
